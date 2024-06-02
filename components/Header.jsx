@@ -24,7 +24,7 @@ export default function Header() {
         variants={animateContainer}
         initial="hidden"
         animate="visible"
-        className="lg:flex hidden items-center justify-between w-full p-20 text-[#FFFFFF] font-serif text-xl"
+        className="lg:flex sticky  hidden items-center justify-between w-full px-20 pt-20 text-[#FFFFFF] font-serif text-xl"
       >
         <Image
           src={Logo}
@@ -35,7 +35,7 @@ export default function Header() {
           <div className="flex items-center w-full gap-[50px]  text-gray-300 ">
             <Link
               href="/"
-              className="transition-all duration-75 hover:text-black"
+              className="transition-all duration-75 hover:text-black "
             >
               Home
             </Link>
@@ -65,7 +65,7 @@ export default function Header() {
         variants={animateContainer}
         initial="hidden"
         animate="visible"
-        className="lg:hidden flex items-center justify-between w-full p-5 bg-white"
+        className="lg:hidden sticky flex items-center justify-between w-full p-5 bg-white"
       >
         <PiList className="w-[40px] h-[40px]" onClick={() => setshow(true)} />
         <Image
@@ -100,19 +100,22 @@ export default function Header() {
           <div className="flex flex-col  items-center  justify-evenly w-full h-full gap-[50px]">
             <Link
               href="/"
-              className=" w-full border border-black text-center p-10"
+              className=" w-full border border-black text-center p-10 "
+              onClick={() => setshow(false)}
             >
               Home
             </Link>
             <Link
               href="/Products"
               className="w-full border border-black text-center p-10"
+              onClick={() => setshow(false)}
             >
               Products
             </Link>
             <Link
               href="/about"
               className="  w-full border border-black text-center p-10"
+              onClick={() => setshow(false)}
             >
               About Us
             </Link>
