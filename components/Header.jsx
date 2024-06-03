@@ -89,7 +89,7 @@ export default function Header() {
           transition={{
             type: easeInOut,
           }}
-          className=" fixed top-0 bg-white  h-screen w-full"
+          className=" z-50 fixed top-0 bg-white h-svh w-full"
         >
           <div className="w-full">
             <RiCloseLargeFill
@@ -97,7 +97,7 @@ export default function Header() {
               onClick={() => setshow(false)}
             />
           </div>
-          <div className="flex flex-col  items-center  justify-evenly w-full h-full gap-[50px]">
+          <div className="flex flex-col  items-center  w-full h-full gap-[50px] font-bold ">
             <Link
               href="/"
               className=" w-full border border-black text-center p-10 "
@@ -118,6 +118,13 @@ export default function Header() {
               onClick={() => setshow(false)}
             >
               About Us
+            </Link>
+            <Link
+              href="/contact"
+              className="border border-black text-center p-5 rounded-lg  bg-black text-white"
+              onClick={() => setshow(false)}
+            >
+              Contact
             </Link>
           </div>
         </motion.div>

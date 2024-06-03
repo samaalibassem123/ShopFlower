@@ -19,19 +19,18 @@ module.exports = {
       const newUtilities = {
         ".scrollbar-thin": {
           scrollbarWidth: "thin",
-          scrollbarColor: "rgb(31 29  29) white",
+          scrollbarColor: "rgb(31 29  29) gray",
         },
         ".scrollbar-webkit": {
           "&::-webkit-scrollbar": {
-            width: "10px",
+            width: "2px",
           },
           "&::-webkit-scrollbar-track": {
-            background: "black",
+            background: "gray",
           },
           "&::-webkit-scrollbar-thumb": {
-            backgroundColor: "rgb(31 41 55)",
+            backgroundColor: "gray",
             borderRaduis: "50px",
-            border: "none",
           },
         },
       };
