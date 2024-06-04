@@ -10,7 +10,7 @@ export async function POST(req) {
     const { data, error } = await resend.emails.send({
       from: `nboarding@resend.dev`,
       to: [mail],
-      subject: "Hello world",
+      subject: "Hello Baby Girl",
       react: EmailTemplate({ firstName: name }),
     });
 
