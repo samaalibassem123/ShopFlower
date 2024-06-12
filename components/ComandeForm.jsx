@@ -29,7 +29,7 @@ export default function ComandeForm() {
     e.preventDefault();
     setload(true);
     try {
-      const res = await fetch("/api/send", {
+      const res = await fetch("https://shop-flower-gamma.vercel.app/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
